@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="dark" />
+
+		<script defer src="script.js"></script>
+
+		<title>RegEx</title>
+	</head>
+
+	<body>
+		<h1>Regular Expression</h1>
+
+		<p>
+			A Regular Expression (RegEx, regex, regexp, RE, etc.) is a way to
+			search through strings. It helps in doing validation,
+			getting/matching certain pieces of a string, finding and replacing
+			strings and more.
+		</p>
+
+		<h2>RegEx Format</h2>
+		<ul>
+			<li>
+				Every RE starts and ends with a <code>/</code>. Eg:
+				<code>/selena/</code>
+			</li>
+			<li>
+				RegEx should not be put within <code>""</code> or
+				<code>''</code>.
+			</li>
+			<li>
+				There can be flags after the last <code>/</code> and it can be
+				<ul>
+					<li>
+						`g` (<b>g</b>lobal) - Match anywhere in the string -
+						Without global, only the first result is found
+					</li>
+					<li>`i` (case <b>i</b>b>nsensitive)</li>
+					<li>`m` (<b>m</b>ulti line)</li>
+					<li>`s` (<b>s</b>ingle line (dotall))</li>
+					<li>`u` (<b>u</b>nicode)</li>
+					<li>`y` (stick<b>y</b>)</li>
+				</ul>
+			</li>
+		</ul>
+
+		<h2>Built-In JavaScript Functions</h2>
+		<ul>
+			<li>
+				<code>"str".match(RegEx)</code> to find all matching patterns
+				(RT: array)
+			</li>
+			<li>
+				<code>"str".search(RegEx)</code> to test for a single match (RT:
+				index posn of first match)
+			</li>
+			<li>
+				<code>"str".replace(RegEx, "text")</code> to replace all
+				matching patterns
+			</li>
+			<li>
+				<code>"str".test(RegEx)</code> to test whether pattern(s) were
+				found or not (RT: boolean)
+			</li>
+		</ul>
+
+		<h2>Resources</h2>
+		<ul>
+			<li>
+				WebDevSimplified:
+				<a
+					href="https://www.youtube.com/watch?v=rhzKDrUiJVk"
+					target="_blank"
+					rel="noreferrer"
+					>Learn Regular Expressions In 20 Minutes</a
+				>
+			</li>
+			<li>
+				Online RegEx testing and experimentation:
+				<a href="https://regexr.com" target="_blank" rel="noreferrer"
+					>regexr.com</a
+				>
+			</li>
+			<li>
+				Fireship.io:
+				<a
+					href="https://www.youtube.com/watch?v=sXQxhojSdZM"
+					target="_blank"
+					rel="noreferrer"
+					>Regular Expressions (RegEx) in 100 Seconds</a
+				>
+			</li>
+			<li>
+				Fireship.io:
+				<a
+					href="https://fireship.io/lessons/regex-cheat-sheet-js"
+					target="_blank"
+					rel="noreferrer"
+					>RegEx cheat sheet</a
+				>
+			</li>
+			<li>
+				Source code for this web site:
+				<a
+					href="https://github.com/HarshKapadia2/regex"
+					target="_blank"
+					rel="noreferrer"
+					>github.com/HarshKapadia2/regex</a
+				>
+			</li>
+		</ul>
+
+		<h2>Examples</h2>
+		<ol id="regex-example-list"></ol>
+	</body>
+</html>
